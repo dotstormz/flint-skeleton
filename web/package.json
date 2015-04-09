@@ -1,0 +1,20 @@
+{
+  "name": "flint-project-frontend",
+  "version": "0.0.1",
+  "description": "Front-end for Flint skeleton",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:StudioNoneDev/flint.git"
+  },
+  "author": "Josh Girvin <josh@studionone.com.au>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
