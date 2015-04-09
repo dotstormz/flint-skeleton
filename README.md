@@ -2,10 +2,12 @@
 This repository holds the skeleton for a full project based on [Flint](https://bitbucket.org/StudioNoneDev/flint), an extension to Silex that adds functionality and gives some declarative and conventional structure to an otherwise amazing library.
 
 ## Usage
-Starting a new Flint project is as simple as running this command (replacing parts where appropriate):
-```
-composer create-project studionone/flint-skeleton <target-folder> --repository-url=https://bitbucket.org/StudioNoneDev/flint-skeleton.git
-```
+Until we get Statis up and running for our own private Composer repository, you'll have to follow these steps:
+
+1. Clone this repository: `git clone git@bitbucket.org:StudioNoneDev/flint-skeleton.git <target-folder>`
+2. Install the dependencies: `cd <target-folder> && composer install`
+3. Verify the installation is working: `php -S localhost:8080 ./web/index.php`
+4. Open your browser to http://localhost:8080/ and you should see Flint working
 
 ## Licence
 Flint and Flint Skeleton are owned by Studio None, and released under an MIT license
