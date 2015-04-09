@@ -1,0 +1,12 @@
+{
+    "name": "studionone/flint-project",
+    "repositories": [
+        {
+            "url": "https://bitbucket.org/StudioNoneDev/flint.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "studionone/flint": "dev-master"
+    }
+}
