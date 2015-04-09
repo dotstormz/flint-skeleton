@@ -8,5 +8,10 @@
     ],
     "require": {
         "studionone/flint": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlintExample\\": "src/"
+        }
     }
 }

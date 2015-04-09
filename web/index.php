@@ -1,7 +1,10 @@
 <?php
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use CQML\App;
+use FlintExample\ExampleApp,
+    Flint\Config;
 
-$app = App::getInstance();
+$config = Config::getInstance()->load(__DIR__ . "/../app/config.php");
+
+$app = ExampleApp::getInstance($config);
 $app->run();
