@@ -13,5 +13,9 @@
         "psr-4": {
             "FlintExample\\": "src/"
         }
+    },
+    "scripts": {
+        "post-intall-cmd": ["Flint\\Commands\\NpmBridge::postInstallCmd"],
+        "start-server": "php -S localhost:8080 web/index.php"
     }
 }
