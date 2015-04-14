@@ -1,8 +1,10 @@
 <?php
 namespace FlintExample;
 
-use Flint\App;
+use Silex\Application,
+    Flint\App;
 
 class ExampleApp extends App
 {
+    use Application\TwigTrait;
 }

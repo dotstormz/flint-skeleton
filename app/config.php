@@ -10,6 +10,7 @@ return [
     'core' => [
         'configDir' => __DIR__,
         'controllersFile' => '/controllers.php',
-        'routesFile' => '/routes.php'
+        'routesFile' => '/routes.php',
+        'servicesFile' => '/services.php'
     ]
 ];

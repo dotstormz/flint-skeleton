@@ -2,8 +2,8 @@
     "name": "studionone/flint-skeleton",
     "repositories": [
         {
-            "url": "https://bitbucket.org/StudioNoneDev/flint.git",
-            "type": "git"
+            "type": "composer",
+            "url": "http://composer.labs.studionone.com.au/"
         }
     ],
     "require": {
