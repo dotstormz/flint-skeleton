@@ -13,5 +13,10 @@ return [
             'name',
             'ExampleService:reverse'
         ]
+    ],
+    '/validate/{name}' => [
+        'get',
+        'example.controller:validateAction',
+        'validate_route'
     ]
 ];
