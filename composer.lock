@@ -177,7 +177,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/StudioNoneDev/flint.git",
+                "url": "https://github.com/studionone/Flint.git",
                 "reference": "70c703374bf5a8f3a8c540eb5f14c97329ec22b2"
             },
             "require": {

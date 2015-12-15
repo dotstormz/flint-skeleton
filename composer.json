@@ -3,7 +3,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "http://composer.labs.studionone.com.au/"
+            "url": "http://composer.tools.studionone.io/"
         }
     ],
     "require": {
