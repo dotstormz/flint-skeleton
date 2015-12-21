@@ -2,7 +2,7 @@
 paramters:
 
 return [
-    'ExampleService' => [
+    'example.service' => [
         'class' => 'FlintExample\Service\ExampleService',
         'arguments' => []
     ]

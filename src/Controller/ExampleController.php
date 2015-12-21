@@ -1,12 +1,22 @@
 <?php
 namespace FlintExample\Controller;
 
-use FlintExample\ExampleApp,
-    Symfony\Component\HttpFoundation\Response,
-    Symfony\Component\Validator\Constraints as Assert;
+use FlintExample\ExampleApp;
+use FlintExample\Service\ExampleService;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class ExampleController
 {
+    protected $example;
+    protected $validator;
+
+    public function __construct(ExampleService $example, $validator)
+    {
+        $this->exampleService = $example;
+        $this->validator = $validator;
+    }
+
     /**
      * This action shows how the routes.php configuration file binds a
      * controller service to a route directly
@@ -38,7 +48,7 @@ class ExampleController
     {
         $app = ExampleApp::getInstance();
 
-        $errors = $app['validator']->validateValue($name, new Assert\Type([
+        $errors = $this->validator->validateValue($name, new Assert\Type([
             'type' => 'numeric',
             'message' => 'Error, {{ value }} is not a valid {{ type }}'
         ]));

@@ -1,8 +1,8 @@
 <?php
-use FlintExample\Controller\ExampleController;
 
 return [
-    'example' => function() {
-        return new ExampleController();
-    }
+    'example.controller' => [
+        'class' => 'FlintExample\Controller\ExampleController',
+        'arguments' => ['@example.service', '@validator'],
+    ]
 ];
